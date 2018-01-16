@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    padding: 0px; 
+}
+.background{
+    background: url('hamburg-1354775_1920.jpg') 100%;
+    height: 640px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.upper-img{
+    width: 100%;
+    height: 480px;
+}
+.bottom-img img{
+    width: 100%;
+}
+.snow-div1{
+    background: url('snowfall-img.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 640px;
+    background-size: 80px;
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fallingSnow1 15s infinite linear;
+}
+
+.snow-div2{
+    background: url('snowfall-img.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 640px;
+    background-size: 120px;
+    filter: blur(1px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fallingSnow2 20s infinite linear;   
+}
+.snow-div3{
+    background: url('snowfall-img.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 640px;
+    background-size: 220px;
+    filter: blur(1px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fallingSnow3 25s infinite linear; 
+}
+@keyframes fallingSnow1{
+    0%{
+        background-position: 10px 330px;
+    }100%{
+        background-position: 0px 700px;
+    }
+}
+@keyframes fallingSnow2{
+    0%{
+        background-position: 0px 100px;
+    }100%{
+        background-position:200px 700px;
+    }
+}
+
+@keyframes fallingSnow3{
+    0%{
+        background-position:-20px -200px; 
+    }100%{
+        background-position: 150px 700px;
+    }
+}
